@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: "Component",
+    name: "LivewireComponent",
     props: {
         name: {
             type: String

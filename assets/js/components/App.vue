@@ -1,6 +1,6 @@
 <script>
 
-import LivewireComponent from "./Component.vue";
+import LivewireComponent from "./LivewireComponent.vue";
 
 export default {
     components: {
@@ -30,9 +30,7 @@ export default {
             /**
              * FIXME: livewire model not getting updated
              */
-
             const _component = window.Livewire.all()[event.index]
-
             _component.$wire.set(event.property, event.value)
         }
     },
@@ -42,13 +40,13 @@ export default {
 <template>
     <div class="wrapper">
         <LivewireComponent
-            v-for="(component, componentIndex) in livewire.all()"
-            :id="component.id"
-            :index="componentIndex"
-            :name="component.name"
-            :livewire-properties="component.ephemeral"
+            v-for="(item, index) in livewire.all()"
+            :id="item.id"
+            :index="index"
+            :name="item.name"
+            :livewire-properties="item.ephemeral"
             @update-livewire-property="updateLivewireProperty"
-            :key="component.id"
+            :key="item.id"
         />
     </div>
 </template>

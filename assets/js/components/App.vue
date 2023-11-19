@@ -8,22 +8,21 @@ export default {
     },
     data() {
         return {
-            livewire: null,
+            livewire: [],
         }
     },
     created() {
 
-        this.livewire = window.Livewire
+        this.livewire = window.Livewire.all()
 
         const _this = this
 
         window.Livewire.hook('morph.updated', () => _this.updateLivewire())
-
     },
 
     methods: {
         updateLivewire() {
-            this.livewire = window.Livewire
+            this.livewire = window.Livewire.all()
         },
 
         updateLivewireProperty(event) {
@@ -40,7 +39,7 @@ export default {
 <template>
     <div class="wrapper">
         <LivewireComponent
-            v-for="(item, index) in livewire.all()"
+            v-for="(item, index) in livewire"
             :id="item.id"
             :index="index"
             :name="item.name"

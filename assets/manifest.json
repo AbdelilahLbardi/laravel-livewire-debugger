@@ -1,0 +1,17 @@
+{
+    "name": "Livewire Debugger",
+    "version": "1.0.0",
+    "description": "The Livewire Debugger",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/content.js"],
+            "world": "MAIN"
+        }
+    ],
+    "manifest_version": 3
+}

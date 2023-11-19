@@ -1,17 +1,23 @@
 {
     "name": "Livewire Debugger",
+    "manifest_version": 3,
     "version": "1.0.0",
     "description": "The Livewire Debugger",
     "permissions": [
         "scripting",
         "activeTab"
     ],
+    "icons": {
+        "16": "images/livewire.png",
+        "32": "images/livewire.png",
+        "64": "images/livewire.png",
+        "128": "images/livewire.png"
+    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["js/content.js"],
             "world": "MAIN"
         }
-    ],
-    "manifest_version": 3
+    ]
 }

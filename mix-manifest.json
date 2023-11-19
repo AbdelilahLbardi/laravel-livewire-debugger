@@ -1,4 +1,5 @@
 {
     "/dist/js/content.js": "/dist/js/content.js",
-    "/dist/manifest.json": "/dist/manifest.json"
+    "/dist/manifest.json": "/dist/manifest.json",
+    "/dist/images/livewire.png": "/dist/images/livewire.png"
 }

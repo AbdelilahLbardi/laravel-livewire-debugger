@@ -1,4 +1,7 @@
-## Livewire Debugger
+# Laravel Livewire Debugger
+
+
+![screenshot](./doc/laravel-livewire-debugger.png)
 
 Very simple extension that helps debugging Livewire components from Vuejs devtools.
 

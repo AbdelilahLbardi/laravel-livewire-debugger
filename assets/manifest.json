@@ -3,10 +3,6 @@
     "manifest_version": 3,
     "version": "1.0.0",
     "description": "The Livewire Debugger",
-    "permissions": [
-        "scripting",
-        "activeTab"
-    ],
     "icons": {
         "16": "images/livewire.png",
         "32": "images/livewire.png",
